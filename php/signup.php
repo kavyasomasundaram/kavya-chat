@@ -31,9 +31,10 @@ if(!empty($fname) && !empty($lname) && !empty($email) && !empty($password)) {
                     $new_img_name = $time.$img_name;
 
                     // ✅ Updated upload directory to match Docker/Render setup
-                    $upload_dir = "php/images/";
+                    $upload_dir = __DIR__ . "/images/";
 
-                    if(move_uploaded_file($tmp_name, $upload_dir.$new_img_name)) {      
+if(move_uploaded_file($tmp_name, $upload_dir.$new_img_name)) {
+ 
 
                         $status = "Active now"; 
                         $random_id = rand(time(), 10000000);   

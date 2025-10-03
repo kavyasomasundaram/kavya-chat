@@ -6,4 +6,4 @@ php/certs/*
 !php/certs/ca.pem
 
 # Ignore uploaded images
-php/images/
+php/images/.gitkeep
