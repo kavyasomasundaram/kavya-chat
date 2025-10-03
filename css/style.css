@@ -642,24 +642,6 @@ body.dark-mode .unread {
 
 
 
-/* 1️⃣ Users.php Mobile Fix (Profile image) */
-
-@media screen and (max-width: 450px) {
-    .users-list a img {
-        width: 45px;
-        height: 45px;
-        object-fit: cover; /* ensures profile shows correctly */
-    }
-
-    .users header .content img {
-        width: 45px;
-        height: 45px;
-    }
-
-    .users-list a .details span {
-        font-size: 16px;
-    }
-}
 
 
 
