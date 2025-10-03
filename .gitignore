@@ -1,5 +1,9 @@
 # Ignore environment variables
 .env
 
-# Ignore SSL certificates
-php/certs/
+# Ignore SSL certificates except CA cert
+php/certs/*
+!php/certs/ca.pem
+
+# Ignore uploaded images
+php/images/
