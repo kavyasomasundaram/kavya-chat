@@ -10,5 +10,8 @@ COPY . /var/www/html/
 # Copy CA certificate
 COPY php/certs /var/www/html/php/certs
 
+# Ensure images folder exists and is writable
+RUN mkdir -p /var/www/html/images && chmod -R 777 /var/www/html/images
+
 # Expose port 80
 EXPOSE 80
